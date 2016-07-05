@@ -15,8 +15,12 @@
  */
 // write your code here
 
+func continentDescription(continent: String, countries: Int) {
+    
+    print("\(continent) is a continent which contains \(countries) countries")
+}
 
-
+continentDescription("Africa", countries: 54)
 
 /*: question2
  ### 2. Can you see why the code below doesn't work? Fix the function call to get rid of the error.
@@ -25,7 +29,7 @@ func greeting(name: String, greeting: String) {
     print("\(greeting), \(name)!")
 }
 
-greeting("Danny", "Hello")
+greeting("Danny", greeting: "Hello")
 
 
 
@@ -33,7 +37,7 @@ greeting("Danny", "Hello")
 /*: question3
  ### 3. This function doesn't work, either. Can you fix the function (_not_ the call) so that it works?
  */
-func daysInMonth(month: String, days: String) {
+func daysInMonth(month: String, days: Int) {
     print("There are \(days) in \(month)")
 }
 
@@ -47,9 +51,13 @@ daysInMonth("November", days: 30)
  */
 // write your code here
 
+func storeBottles(bottleName: String, numberOfBottles: Int, storage: String) {
+    
+    print("\(numberOfBottles) bottles of \(bottleName) on the \(storage) wall")
+    
+    }
 
-
-
+storeBottles("Pinot Noir", numberOfBottles: 30, storage: "back")
 /*:
  [Solution](solution)
  */
